@@ -1,4 +1,5 @@
 import Counter from './components/Counter'
+import LiveText from './components/LiveText'
 import './css/App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <hr />
       <h2>Beginner React Exercises</h2>
       <Counter/>
+      <LiveText/>
       <hr />
       <h2>Intermediate React Exercises</h2>
       <hr />
