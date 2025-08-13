@@ -1,4 +1,8 @@
+import { useState } from "react"
+
 function LiveText() {
+    let [text, setText] = useState("")
+
     return(
         <div>
             <h3>2. Real-Time Text Display</h3>
@@ -12,7 +16,11 @@ function LiveText() {
             </ol>
             <br />
             <p>Exercise Solution:</p>
-            <br /><br /><br />
+            <br />
+            <input type="text" value={text} placeholder="Enter text here..." onChange={(e) => setText(e.target.value)}/>
+            <p>{text}</p>
+            <br /><br />
+
         </div>
     )
 }
