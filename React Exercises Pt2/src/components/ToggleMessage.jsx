@@ -1,6 +1,12 @@
 import { useState } from "react";
 
 function ToggleMessage() {
+    let [visible, setVisible] = useState(true);
+
+    const visibilityToggle = () => {
+        setVisible (prev => !prev);
+    };
+
     return(
         <div>
             <h3>3. Toggle Visibility</h3>
@@ -15,7 +21,13 @@ function ToggleMessage() {
             <br />
             <p>Exercise Solution:</p>
             <br />
-            
+            <button onClick={visibilityToggle}>Toggle Visiblity</button>
+
+            {visible ? (
+                <p>You can see me!</p>
+            ):(
+                <p style={{display: 'none'}}>You cannot see me!</p>
+            )}
             <br /><br />
 
         </div>
