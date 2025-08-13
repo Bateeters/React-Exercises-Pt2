@@ -1,5 +1,6 @@
 import Counter from './components/Counter'
 import LiveText from './components/LiveText'
+import ToggleMessage from './components/ToggleMessage'
 import './css/App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <h2>Beginner React Exercises</h2>
       <Counter/>
       <LiveText/>
+      <ToggleMessage/>
       <hr />
       <h2>Intermediate React Exercises</h2>
       <hr />

@@ -3,6 +3,7 @@ import { useState } from "react"
 function Counter() {
     let [counter, setCounter] = useState(0)
     let [oddOrEven, setOddOrEven] = useState(null)
+    let negativeNumber = Math.abs(counter);
 
     const increaseCount = () => {
         setCounter(++counter)
@@ -22,6 +23,12 @@ function Counter() {
     function oddOrEvenNumber(counter) {
         if (counter === 0) {
             setOddOrEven(null)
+        } else if (counter < 0) {
+            if (negativeNumber%2 === 1) {
+                setOddOrEven("Even")
+            } else {
+                setOddOrEven("Odd")
+            }
         } else {
             if (counter%2 === 1) {
                 setOddOrEven("Odd")
