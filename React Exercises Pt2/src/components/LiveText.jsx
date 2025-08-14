@@ -16,7 +16,6 @@ function LiveText() {
             </ol>
             <br />
             <p>Exercise Solution:</p>
-            <br />
             <input type="text" value={text} placeholder="Enter text here..." onChange={(e) => setText(e.target.value)}/>
             <p>{text}</p>
             <br /><br />

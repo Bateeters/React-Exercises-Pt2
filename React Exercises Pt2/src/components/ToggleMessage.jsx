@@ -20,7 +20,6 @@ function ToggleMessage() {
             </ol>
             <br />
             <p>Exercise Solution:</p>
-            <br />
             <button onClick={visibilityToggle}>Toggle Visiblity</button>
 
             {visible ? (

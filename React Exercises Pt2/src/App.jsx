@@ -1,5 +1,6 @@
 import Counter from './components/Counter'
 import LiveText from './components/LiveText'
+import TodoList from './components/TodoList'
 import ToggleMessage from './components/ToggleMessage'
 import './css/App.css'
 
@@ -14,6 +15,7 @@ function App() {
       <Counter/>
       <LiveText/>
       <ToggleMessage/>
+      <TodoList/>
       <hr />
       <h2>Intermediate React Exercises</h2>
       <hr />
