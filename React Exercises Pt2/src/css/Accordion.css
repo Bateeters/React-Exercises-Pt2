@@ -1,0 +1,18 @@
+.d-none {
+    display: none;
+}
+
+.selected {
+    display: block !important;
+    padding:15px;
+    background-color: black;
+    margin: 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-start{
+    text-align: start;
+}

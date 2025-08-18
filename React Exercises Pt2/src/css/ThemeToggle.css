@@ -1,0 +1,57 @@
+.light-theme {
+    background-color: white;
+    width: 400px;
+    border: 1px solid yellowgreen;
+    padding: 30px;
+}
+
+.light-theme .card {
+    background-color: whitesmoke;
+    color: #222;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.light-theme .card * {
+    margin: 0;
+}
+
+.light-theme .btn {
+    color: whitesmoke;
+    background-color: #1e2a36;
+}
+
+.light-theme .btn:hover {
+    background-color: #999999;
+}
+
+
+.dark-theme {
+    background-color: black;
+    width: 400px;
+    border: 1px solid yellowgreen;
+    padding: 30px;
+}
+
+.dark-theme .card {
+    background-color: rgb(51, 52, 61);
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.dark-theme .card * {
+    margin: 0;
+}
+
+.dark-theme .btn {
+    color: #222;
+    background-color: whitesmoke;
+}
+
+.dark-theme .btn:hover {
+    color: whitesmoke;
+    background-color: #999999;
+}
