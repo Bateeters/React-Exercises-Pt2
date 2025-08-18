@@ -5,6 +5,7 @@ import Tabs from './components/Tabs'
 import ThemeToggle from './components/ThemeToggle'
 import TodoList from './components/TodoList'
 import ToggleMessage from './components/ToggleMessage'
+import ValidatedForm from './components/ValidatedForm'
 import './css/App.css'
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
 
   const intermediateExercises = [
     <h1>Intermediate Exercises</h1>,
-    <Tabs/>, <Accordion/>, "Form Validation", "Search Filter", "Character Counter"
+    <Tabs/>, <Accordion/>, <ValidatedForm/>, "Search Filter", "Character Counter"
   ]
 
   const advancedExercises = [

@@ -5,7 +5,7 @@
 .selected {
     display: block !important;
     padding:15px;
-    background-color: black;
+    background-color: rgb(66, 66, 66);
     margin: 0;
 }
 

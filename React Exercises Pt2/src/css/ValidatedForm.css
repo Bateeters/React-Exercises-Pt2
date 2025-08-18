@@ -1,0 +1,19 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.name-field {
+    width: 45%;
+}
+
+input {
+    margin-bottom: 15px;
+}
