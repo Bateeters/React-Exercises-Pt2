@@ -6,7 +6,7 @@ function ValidatedForm() {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
     const [email, setEmail] = useState("")
-    const [phoneNumber, setPhoneNumber] = useState(null)
+    const [phoneNumber, setPhoneNumber] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault()

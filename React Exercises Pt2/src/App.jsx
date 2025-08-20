@@ -1,6 +1,7 @@
 import Accordion from './components/Accordion'
 import Counter from './components/Counter'
 import LiveText from './components/LiveText'
+import SearchFilter from './components/SearchFilter'
 import Tabs from './components/Tabs'
 import ThemeToggle from './components/ThemeToggle'
 import TodoList from './components/TodoList'
@@ -16,7 +17,7 @@ function App() {
 
   const intermediateExercises = [
     <h1>Intermediate Exercises</h1>,
-    <Tabs/>, <Accordion/>, <ValidatedForm/>, "Search Filter", "Character Counter"
+    <Tabs/>, <Accordion/>, <ValidatedForm/>, <SearchFilter/>, "Character Counter"
   ]
 
   const advancedExercises = [
