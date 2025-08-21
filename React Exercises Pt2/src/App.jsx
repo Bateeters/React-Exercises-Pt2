@@ -1,4 +1,5 @@
 import Accordion from './components/Accordion'
+import CharCounter from './components/CharCounter'
 import Counter from './components/Counter'
 import LiveText from './components/LiveText'
 import SearchFilter from './components/SearchFilter'
@@ -17,7 +18,7 @@ function App() {
 
   const intermediateExercises = [
     <h1>Intermediate Exercises</h1>,
-    <Tabs/>, <Accordion/>, <ValidatedForm/>, <SearchFilter/>, "Character Counter"
+    <Tabs/>, <Accordion/>, <ValidatedForm/>, <SearchFilter/>, <CharCounter/>
   ]
 
   const advancedExercises = [
