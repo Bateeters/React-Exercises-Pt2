@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "../services/api.js"
 
 function FetchPosts() {
     return(
