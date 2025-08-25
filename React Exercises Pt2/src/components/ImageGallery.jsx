@@ -57,10 +57,10 @@ function ImageGallery() {
             <button
                 onClick={() => handleSearch()}
             >Search</button>
-            <div style={{display: "flex", flexWrap: "wrap"}}>
+            <div style={{display: "flex", flexWrap: "wrap", width: "60%"}}>
                 {images.map((image) => (
                     <img 
-                        style={{width: "30%"}}
+                        style={{width: "30%", height: "200px", objectFit: "cover"}}
                         src={image.images.fixed_height.url} 
                         alt={image.title} 
                         key={image.id}
@@ -68,7 +68,34 @@ function ImageGallery() {
                     />
                 ))}
             </div>
-            
+
+            {selectedImg && (
+                <div
+                    onClick={closeFullscreen}
+                    style={{
+                        position: "fixed",
+                        top: 0,
+                        left: 0,
+                        width: "100vw",
+                        height: "100vh",
+                        backgroundColor: "rgba(0,0,0,0.9)",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        zIndex: 1000,
+                        cursor: "pointer",
+                    }}
+                >
+                    <img
+                        src={selectedImg}
+                        alt="Fullscreen"
+                        style={{
+                            maxWidth: "100%",
+                            maxHeight: "100%"
+                        }}
+                    />
+                </div>
+            )}
             <br /><br />
 
         </div>
