@@ -2,6 +2,7 @@ import Accordion from './components/Accordion'
 import CharCounter from './components/CharCounter'
 import Counter from './components/Counter'
 import FetchPosts from './components/FetchPosts'
+import ImageGallery from './components/ImageGallery'
 import LiveText from './components/LiveText'
 import SearchFilter from './components/SearchFilter'
 import Tabs from './components/Tabs'
@@ -24,7 +25,7 @@ function App() {
 
   const advancedExercises = [
     <h1>Advanced Exercises</h1>,
-    <FetchPosts/>, "Image Gallery", "React Router Mini App", "Theme Context", "Custom Hook: useLocalStorage"
+    <FetchPosts/>, <ImageGallery/>, "React Router Mini App", "Theme Context", "Custom Hook: useLocalStorage"
   ]
 
   const tabsArray = [
