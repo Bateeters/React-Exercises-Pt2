@@ -7,13 +7,19 @@ import LiveText from '../components/LiveText'
 import RouterMiniApp from '../components/RouterMiniApp'
 import SearchFilter from '../components/SearchFilter'
 import Tabs from '../components/Tabs'
+import ThemeSelection from '../components/ThemeSelection'
 import ThemeToggle from '../components/ThemeToggle'
 import TodoList from '../components/TodoList'
 import ToggleMessage from '../components/ToggleMessage'
 import ValidatedForm from '../components/ValidatedForm'
 import '../css/App.css'
+import '../css/Themes.css'
+import { ThemeContext } from '../context/ThemeContext'
+import { useContext } from 'react'
 
 function HomePage() {
+  const {theme} = useContext(ThemeContext)
+
   const beginnerExercises = [
     <h1>Beginner Exercises</h1>,
     <Counter/>, <LiveText/>, <ToggleMessage/>, <TodoList/>, <ThemeToggle/>
@@ -26,7 +32,7 @@ function HomePage() {
 
   const advancedExercises = [
     <h1>Advanced Exercises</h1>,
-    <FetchPosts/>, <ImageGallery/>, <RouterMiniApp/>, "Theme Context", "Custom Hook: useLocalStorage"
+    <FetchPosts/>, <ImageGallery/>, <RouterMiniApp/>, <ThemeSelection/>, "Custom Hook: useLocalStorage"
   ]
 
   const tabsArray = [
@@ -36,7 +42,7 @@ function HomePage() {
   ]
 
   return (
-    <div>
+    <div className={`${theme}`}>
       <h1>Hello World</h1>
       <h3>Welcome to my collection of React Exercises!</h3>
       <hr />
