@@ -16,6 +16,7 @@ import '../css/App.css'
 import '../css/Themes.css'
 import { ThemeContext } from '../context/ThemeContext'
 import { useContext } from 'react'
+import LocalStorageTest from '../components/LocalStorageTest'
 
 function HomePage() {
   const {theme} = useContext(ThemeContext)
@@ -32,7 +33,7 @@ function HomePage() {
 
   const advancedExercises = [
     <h1>Advanced Exercises</h1>,
-    <FetchPosts/>, <ImageGallery/>, <RouterMiniApp/>, <ThemeSelection/>, "Custom Hook: useLocalStorage"
+    <FetchPosts/>, <ImageGallery/>, <RouterMiniApp/>, <ThemeSelection/>, <LocalStorageTest/>
   ]
 
   const tabsArray = [

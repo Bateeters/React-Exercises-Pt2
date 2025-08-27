@@ -30,7 +30,7 @@ body.chocolate {
 
 body.strawberry {
   background-color:pink;
-  color: red;
+  color: firebrick;
 
   & button {
     background: crimson;

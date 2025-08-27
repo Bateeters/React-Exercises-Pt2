@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom"
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 import { ThemeContext } from "../context/ThemeContext"
 import "../css/Themes.css";
 
 function ThemePage() {
   const { theme, setTheme } = useContext(ThemeContext);
-
-  useEffect(() => {
-    document.body.className = theme; // set body class
-  }, [theme]);
 
   return (
         <div>

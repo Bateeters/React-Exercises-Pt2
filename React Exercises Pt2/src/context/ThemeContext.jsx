@@ -1,19 +1,21 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 export const ThemeContext = createContext();
 
 function ThemeProvider({ children }) {
-    const [theme, setTheme] = useState("vanilla");
+  // useLocalStorage instead of useState
+  const [theme, setTheme] = useLocalStorage("theme", "");
 
-    const toggleTheme = () => {
-        setTheme((prev) => (prev === "vanilla" ? "chocolate" : "vanilla"));
-    };
+useEffect(() => {
+    document.body.className = theme; // set body class
+  }, [theme]);
 
-    return (
-        <ThemeContext.Provider value={{ theme, setTheme, toggleTheme}}>
-            {children}
-        </ThemeContext.Provider>
-    );
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }
 
 export default ThemeProvider
