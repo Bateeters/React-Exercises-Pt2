@@ -12,6 +12,7 @@ import ThemeToggle from '../components/ThemeToggle'
 import TodoList from '../components/TodoList'
 import ToggleMessage from '../components/ToggleMessage'
 import ValidatedForm from '../components/ValidatedForm'
+import ListGroup from '../components/ListGroup'
 import '../css/App.css'
 import '../css/Themes.css'
 import { ThemeContext } from '../context/ThemeContext'
@@ -19,6 +20,8 @@ import { useContext } from 'react'
 import LocalStorageTest from '../components/LocalStorageTest'
 
 function HomePage() {
+  let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
+  let games = ['Path of Exile', 'Overwatch 2', 'Stardew Valley', 'Split Fiction', 'Returnal'];
   const {theme} = useContext(ThemeContext)
 
   const beginnerExercises = [
@@ -28,7 +31,7 @@ function HomePage() {
 
   const intermediateExercises = [
     <h1>Intermediate Exercises</h1>,
-    <Tabs/>, <Accordion/>, <ValidatedForm/>, <SearchFilter/>, <CharCounter/>
+    <Tabs/>, <Accordion/>, <ValidatedForm/>, <SearchFilter/>, <CharCounter/>, <ListGroup items={cities} heading="Cities"/>, <ListGroup items={games} heading="Games"/>
   ]
 
   const advancedExercises = [

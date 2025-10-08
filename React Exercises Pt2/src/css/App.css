@@ -38,3 +38,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.list-group {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  list-style-type: none !important;
+}
+
+.list-item {
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.highlight {
+  background-color: blue;
+  color: white;
+}
