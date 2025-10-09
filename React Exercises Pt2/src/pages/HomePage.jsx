@@ -13,6 +13,7 @@ import TodoList from '../components/TodoList'
 import ToggleMessage from '../components/ToggleMessage'
 import ValidatedForm from '../components/ValidatedForm'
 import ListGroup from '../components/ListGroup'
+import Alert from '../components/Alert'
 import '../css/App.css'
 import '../css/Themes.css'
 import { ThemeContext } from '../context/ThemeContext'
@@ -31,7 +32,20 @@ function HomePage() {
 
   const beginnerExercises = [
     <h1>Beginner Exercises</h1>,
-    <Counter/>, <LiveText/>, <ToggleMessage/>, <TodoList/>, <ThemeToggle/>
+    <Counter/>,
+    <LiveText/>,
+    <ToggleMessage/>,
+    <TodoList/>,
+    <ThemeToggle/>,
+    <Alert>
+      This is the Alert Component. It utilizes children.
+    </Alert>,
+    <Alert type='warning'>
+      Warning, did you look through everything already?
+    </Alert>,
+    <Alert type='danger'>
+      Something is <strong><em>REALLY</em></strong> wrong..
+    </Alert>
   ]
 
   const intermediateExercises = [
