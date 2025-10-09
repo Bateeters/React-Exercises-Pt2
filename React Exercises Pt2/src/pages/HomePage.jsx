@@ -22,6 +22,11 @@ import LocalStorageTest from '../components/LocalStorageTest'
 function HomePage() {
   let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
   let games = ['Path of Exile', 'Overwatch 2', 'Stardew Valley', 'Split Fiction', 'Returnal'];
+
+  const handleSelectItem = (e) => {
+    console.log(e)
+  }
+
   const {theme} = useContext(ThemeContext)
 
   const beginnerExercises = [
@@ -31,7 +36,13 @@ function HomePage() {
 
   const intermediateExercises = [
     <h1>Intermediate Exercises</h1>,
-    <Tabs/>, <Accordion/>, <ValidatedForm/>, <SearchFilter/>, <CharCounter/>, <ListGroup items={cities} heading="Cities"/>, <ListGroup items={games} heading="Games"/>
+    <Tabs/>,
+    <Accordion/>,
+    <ValidatedForm/>,
+    <SearchFilter/>,
+    <CharCounter/>,
+    <ListGroup items={cities} heading="Cities" onSelectItem={handleSelectItem}/>,
+    <ListGroup items={games} heading="Games" onSelectItem={handleSelectItem}/>
   ]
 
   const advancedExercises = [

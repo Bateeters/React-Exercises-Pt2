@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ListGroup({items, heading}) { // define the props, or arguments if thinking in terms of functions, needed for component
+function ListGroup({items, heading, onSelectItem}) { // define the props, or arguments if thinking in terms of functions, needed for component
     
     // initialize our state and start it at “-1” so none of the items are highlighted 
     // (0 would highlight the first as it goes by index)
@@ -15,7 +15,10 @@ function ListGroup({items, heading}) { // define the props, or arguments if thin
                 {items.map((item, id) => (
                     <li key={id} 
                         className={ selectedIndex === id ? 'list-item highlight' : 'list-item'}    
-                        onClick={() => {setSelectedIndex(id)}} 
+                        onClick={() => {
+                            setSelectedIndex(id);
+                            onSelectItem(item);
+                        }} 
                     >
                         {item}
                     </li>
