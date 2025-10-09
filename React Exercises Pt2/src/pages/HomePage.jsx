@@ -38,10 +38,10 @@ function HomePage() {
     <TodoList/>,
     <ThemeToggle/>,
     <Alert>
-      <>
+      
         <h3>This is the Alert Component.</h3>
         <p>It utilizes children.</p>
-      </>
+    
     </Alert>,
     <Alert type='warning'>
       Warning, did you look through everything already?
