@@ -19,6 +19,7 @@ import '../css/Themes.css'
 import { ThemeContext } from '../context/ThemeContext'
 import { useContext } from 'react'
 import LocalStorageTest from '../components/LocalStorageTest'
+import Button from '../components/Button'
 
 function HomePage() {
   let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
@@ -48,7 +49,16 @@ function HomePage() {
     </Alert>,
     <Alert type='danger'>
       Something is <strong><em>REALLY</em></strong> wrong..
-    </Alert>
+    </Alert>,
+    <Button onClick={() => alert(`Primary Button Clicked`)}>Primary</Button>,
+    <Button type='secondary' onClick={() => alert(`Secondary Button Clicked`)}>Secondary</Button>,
+    <Button type='success' onClick={() => alert(`Success Button Clicked`)}>Success</Button>,
+    <Button type='danger' onClick={() => alert(`Danger Button Clicked`)}>Danger</Button>,
+    <Button type='warning' onClick={() => alert(`Warning Button Clicked`)}>Warning</Button>,
+    <Button type='info' onClick={() => alert(`Info Button Clicked`)}>Info</Button>,
+    <Button type='light' onClick={() => alert(`Light Button Clicked`)}>Light</Button>,
+    <Button type='dark' onClick={() => alert(`Dark Button Clicked`)}>Dark</Button>,
+    <Button type='link' onClick={() => alert(`Link Button Clicked`)}>Link</Button>,
   ]
 
   const intermediateExercises = [

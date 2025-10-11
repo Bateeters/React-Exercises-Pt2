@@ -56,3 +56,44 @@
   background-color: blue;
   color: white;
 }
+
+.btn-primary {
+  background-color: blue;
+}
+
+.btn-secondary {
+  background-color: gray;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.btn-warning {
+  background-color: gold;
+  color: black;
+}
+
+.btn-info {
+  background-color: skyblue;
+  color: black;
+}
+
+.btn-light {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.btn-dark {
+  background-color: black;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: blue;
+  text-decoration: underline;
+}
