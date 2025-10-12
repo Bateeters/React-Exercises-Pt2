@@ -20,6 +20,7 @@ import { ThemeContext } from '../context/ThemeContext'
 import { useContext } from 'react'
 import LocalStorageTest from '../components/LocalStorageTest'
 import Button from '../components/Button'
+import UseStateExploration from '../components/UseStateExploration'
 
 function HomePage() {
   let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
@@ -30,6 +31,11 @@ function HomePage() {
   }
 
   const {theme} = useContext(ThemeContext)
+
+  const reactHooks =[
+    <h1>React Hooks Exploration</h1>,
+    <UseStateExploration/>,
+  ]
 
   const beginnerExercises = [
     <h1>Beginner Exercises</h1>,
@@ -78,6 +84,7 @@ function HomePage() {
   ]
 
   const tabsArray = [
+    {label: "React Hooks Exploration", content: [reactHooks]},
     {label: "Beginner Exercises", content: [beginnerExercises]},
     {label: "Intermediate Exercises", content: [intermediateExercises]},
     {label: "Advanced Exercises", content: [advancedExercises]},
