@@ -18,6 +18,7 @@ function UseEffectExploration() {
             <br/><br/>
             <h4>Advanced Example</h4>
             <DataFetcher/>
+            <hr/>
 
         </>
     )

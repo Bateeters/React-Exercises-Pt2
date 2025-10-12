@@ -15,7 +15,7 @@ function DataFetcher() {
         setError(null);
 
         const response = await fetch("https://jsonplaceholder.typicode.com/posts", { signal });
-        
+
         // making sure response was successful
         if (!response.ok) throw new Error("Network response was not ok");
 
@@ -44,7 +44,7 @@ function DataFetcher() {
 
   return (
     <div>
-      <h3>Fetched Posts</h3>
+      <h3>Fetched Posts From API</h3>
       <ul>
         {data.map((post, id) => (
           <li key={id}>
