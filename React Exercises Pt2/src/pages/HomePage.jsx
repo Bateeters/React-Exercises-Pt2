@@ -21,6 +21,7 @@ import { useContext } from 'react'
 import LocalStorageTest from '../components/LocalStorageTest'
 import Button from '../components/Button'
 import UseStateExploration from '../components/UseStateExploration'
+import UseEffectExploration from '../components/UseEffectExploration'
 
 function HomePage() {
   let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
@@ -35,6 +36,7 @@ function HomePage() {
   const reactHooks =[
     <h1>React Hooks Exploration</h1>,
     <UseStateExploration/>,
+    <UseEffectExploration/>,
   ]
 
   const beginnerExercises = [

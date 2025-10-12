@@ -18,6 +18,7 @@ function UseStateExploration(){
             <br/>
             <h4>Advanced Example</h4>
             <Form/>
+            <hr/>
 
         </>
     )
