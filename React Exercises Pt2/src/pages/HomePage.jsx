@@ -22,6 +22,7 @@ import LocalStorageTest from '../components/LocalStorageTest'
 import Button from '../components/Button'
 import UseStateExploration from '../components/UseStateExploration'
 import UseEffectExploration from '../components/UseEffectExploration'
+import UseRefExploration from '../components/UseRefExploration'
 
 function HomePage() {
   let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
@@ -37,6 +38,7 @@ function HomePage() {
     <h1>React Hooks Exploration</h1>,
     <UseStateExploration/>,
     <UseEffectExploration/>,
+    <UseRefExploration/>,
   ]
 
   const beginnerExercises = [
