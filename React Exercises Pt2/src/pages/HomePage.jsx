@@ -23,6 +23,7 @@ import Button from '../components/Button'
 import UseStateExploration from '../components/UseStateExploration'
 import UseEffectExploration from '../components/UseEffectExploration'
 import UseRefExploration from '../components/UseRefExploration'
+import UseReducerExploration from '../components/UseReducerExploration'
 
 function HomePage() {
   let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
@@ -39,6 +40,7 @@ function HomePage() {
     <UseStateExploration/>,
     <UseEffectExploration/>,
     <UseRefExploration/>,
+    <UseReducerExploration/>
   ]
 
   const beginnerExercises = [

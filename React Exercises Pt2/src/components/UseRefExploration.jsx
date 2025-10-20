@@ -15,7 +15,7 @@ function UseRefExploration() {
             <h4>Intermediate Example</h4>
             <Stopwatch/>
 
-            <br/><br/>
+            <br/>
             <h4>Advanced Example</h4>
             <RenderCounter/>
             <hr/>
