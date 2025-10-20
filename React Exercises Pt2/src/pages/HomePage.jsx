@@ -24,6 +24,7 @@ import UseStateExploration from '../components/UseStateExploration'
 import UseEffectExploration from '../components/UseEffectExploration'
 import UseRefExploration from '../components/UseRefExploration'
 import UseReducerExploration from '../components/UseReducerExploration'
+import UseMemoCallbackExploration from '../components/useMemoCallbackExploration'
 
 function HomePage() {
   let cities = ['New York', 'San Francisco', 'Tokyo', 'London'];
@@ -40,7 +41,8 @@ function HomePage() {
     <UseStateExploration/>,
     <UseEffectExploration/>,
     <UseRefExploration/>,
-    <UseReducerExploration/>
+    <UseReducerExploration/>,
+    <UseMemoCallbackExploration/>
   ]
 
   const beginnerExercises = [
