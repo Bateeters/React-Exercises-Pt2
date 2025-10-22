@@ -1,3 +1,4 @@
+import ReactMemoExample from "./ReactMemoExample";
 import UseCallbackFunction from "./UseCallbackFunction";
 import UseMemoCalc from "./UseMemoCalc";
 
@@ -15,6 +16,7 @@ function UseMemoCallbackExploration() {
             <UseCallbackFunction/>
             <br/>
             <h4>Advanced Example</h4>
+            <ReactMemoExample/>
             <hr/>
 
         </>
